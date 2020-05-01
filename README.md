@@ -1,7 +1,6 @@
 # SteadfastCareServices
-Steadfast Care Services
 ## Development of Steadfast Care Services
-# Less 
+## Less 
 npm install less -g (install less globally)<br>
 npm install less-watch-compiler (comiles less file)<br>
 lessc styles.less style.css (it will automatically updates css file on change less file)<br>
