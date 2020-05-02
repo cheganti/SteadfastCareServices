@@ -13,7 +13,7 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 51
+        offset: 51,
     });
 
     // Closes the Responsive Menu on Menu Item Click
@@ -60,5 +60,13 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+    $(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
 
 })(jQuery); // End of use strict
